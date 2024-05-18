@@ -1,0 +1,116 @@
+
+.about{
+
+    margin-top: 70px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.about-left img{
+    max-width: 600px;
+    height: 450px;
+}
+
+
+   
+   .about-right{
+        background-color:#F6AB41;
+       margin-bottom: 5px;
+       padding: 30px 40px;
+       
+      
+   }
+
+   .about h4{
+    font-weight: 550;
+    font-size: 42px; 
+    margin: 10px 0;
+    width: 400px;
+}
+
+.about p{
+    font-weight: 600;
+    font-size: 17px; 
+    margin: 15px 0;
+    width: 400px;
+}
+
+.aboutbutton{
+    padding: 20px 30px;
+    background-color: black;
+    color: #F6AB41;
+    font-weight: 600;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+   
+/* Media query for smaller screens */
+@media (max-width: 767.98px) {
+    .about {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center align items */
+        
+    }
+
+    .about-left img {
+        max-width: 100%; /* Make image responsive */
+        height: auto;
+        margin-bottom: 20px; /* Add margin between image and content box */
+    }
+
+    .about-right {
+        width: 100%; /* Make content box full width */
+        max-width: none; /* Remove max-width */
+    }
+
+    .about h4,
+    .about p {
+        width: 100%; /* Make text full width */
+    }
+    .about h4{
+        font-weight: 550;
+        font-size: 30px; 
+        margin: 10px 0;
+      
+    }
+    .mycontainer{
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+}
+
+/* Media query for medium-sized screens */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .about {
+        flex-direction: column; /* Stack items vertically on medium screens */
+        align-items: center; /* Center align items */
+    }
+
+    .about-left img {
+        max-width: 100%; /* Make image responsive */
+        height: auto;
+        margin-bottom: 20px; /* Add margin between image and content box */
+    }
+
+    .about-right {
+        width: 100%; /* Make content box full width */
+        max-width: none; /* Remove max-width */
+    }
+
+    .about h4,
+    .about p {
+        width: 100%; /* Make text full width */
+    }
+   
+    .mycontainer{
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+}
+

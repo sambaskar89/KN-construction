@@ -1,0 +1,151 @@
+.constructionworks-2{
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 80px;
+    margin-bottom: 80px;
+  }
+  .constructionworks-2 h6{
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+  }
+  .constructionworks-2 h2{
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    
+  }
+  .constructionworks-2-content1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .constructionworks-2-content1 img{
+    max-width: 600px;
+    height: 400px;
+  }
+  .constructionworks-2-content1 p{
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    padding-top: 10px;
+
+  }
+ 
+  .constructionworks-2 h2{
+    font-size: 35px;
+    font-weight: 400;
+   
+  }
+ 
+
+   .constructionworks-2 h6::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Adjust the height of the underline as needed */
+    background-color: orange; /* Change the color of the underline */
+    display: block;
+  }
+  .constructionworks-2-paragraph{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+  }
+
+
+
+
+
+  /* Media query for medium screens */
+@media screen and (max-width: 1400px) {
+
+  .aboutus-1 h1{
+    color: white; 
+    font-size: 50px;
+}
+  .constructionworks-2{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+  }
+  .constructionworks-2-content1 {
+      flex-direction: column; /* Change to column layout for medium screens */
+      align-items: center; /* Center items vertically */  
+  }
+  .constructionworks-2-content1 p{
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding-left: 0px;
+    padding-top: 10px;
+
+  }
+  .constructionworks-2-content1 img {
+      width: 100%; /* Make the image fill the width of its container */
+      max-width: none; /* Remove max-width */
+      height: auto; /* Auto-adjust height */
+      margin-bottom: 20px; /* Add spacing between image and paragraph */
+     
+  }
+
+  .constructionworks-2-paragraph {
+      width: 100%; /* Make paragraph width full for medium screens */
+      
+  }
+}
+
+@media screen and (max-width: 600px) {
+ 
+  .aboutus-1 h1{
+    color: white; 
+    font-size: 40px;
+}
+    .constructionworks-2{
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    .constructionworks-2-content1 {
+        flex-direction: column; /* Change to column layout for medium screens */
+        align-items: center; /* Center items vertically */
+        
+       
+    }
+  
+    .constructionworks-2-content1 img {
+        width: 100%; /* Make the image fill the width of its container */
+        max-width: none; /* Remove max-width */
+        height: auto; /* Auto-adjust height */
+        margin-bottom: 20px; /* Add spacing between image and paragraph */
+    }
+    .constructionworks-2-content1 p{
+      
+      margin-bottom: 30px;
+      padding-left: 0px;
+      padding-top: 10px;
+  
+    }
+    .constructionworks-2-paragraph {
+        width: 100%; /* Make paragraph width full for medium screens */
+      
+    }
+  
+  .constructionworks-2-content1 {
+      flex-direction: column; /* Change to column layout for medium screens */
+      align-items: center; /* Center items vertically */
+      
+     
+  }
+
+  .constructionworks-2-content1 img {
+      width: 100%; /* Make the image fill the width of its container */
+      max-width: none; /* Remove max-width */
+      height: auto; /* Auto-adjust height */
+      margin-bottom: 20px; /* Add spacing between image and paragraph */
+  }
+
+  .constructionworks-2-paragraph {
+      width: 100%; /* Make paragraph width full for medium screens */
+  }
+}

@@ -1,0 +1,67 @@
+
+.testimonials{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+
+.testimonials-1 ,.testimonials-2, .testimonials-3 ,.testimonials-4, .testimonials-5 ,.testimonials-6{
+    border: 1px solid #CCCCCC; /* Light gray border */
+    padding: 45px 35px;
+    flex-basis: 30%;
+    margin-bottom: 40px;     /*Gap between rows*/
+   
+  }
+
+  .testimonials-1 img ,.testimonials-2 img,.testimonials-3 img,.testimonials-4 img,.testimonials-5 img,.testimonials-6 img{ 
+    width: 70px;
+    height: auto;
+  }
+
+  .testimonials-1 h3 ,.testimonials-2 h3,.testimonials-3 h3,.testimonials-4 h3,.testimonials-5 h3,.testimonials-6 h3{
+        font-size: 24px;
+        font-weight: 500;
+        margin: 20px 0;
+  }
+  
+  .testimonials-1 p ,.testimonials-2 p,.testimonials-3 p,.testimonials-4 p,.testimonials-5 p,.testimonials-6 p{
+    font-size: 16px;
+    margin: 0 0 70px;
+  }
+
+  .testimonials-1 a ,.testimonials-2 a,.testimonials-3 a,.testimonials-4 a,.testimonials-5 a,.testimonials-6 a{
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    display: inline-block; /* Ensure anchor tag behaves like a block-level element */
+    width: 50px; /* Set the width */
+    height: 50px; /* Set the height */
+    line-height: 50px; /* Center the text vertically */
+    text-align: center; /* Center the text horizontally */
+    text-decoration: none; /* Remove underline */
+  }
+
+  .testimonials-1:hover,
+  .testimonials-2:hover,
+  .testimonials-3:hover,
+  .testimonials-4:hover,
+  .testimonials-5:hover,
+  .testimonials-6:hover {
+  background-color: #F6AB41; /* Change background color on hover */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+  /* Media query for medium screens */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .testimonials-1, .testimonials-2, .testimonials-3, .testimonials-4, .testimonials-5, .testimonials-6 {
+      flex-basis: calc(30% - 20px); /* Three testimonials per row with a gap of 20px */
+  }
+}
+
+/* Media query for small screens */
+@media (max-width: 767.98px) {
+  .testimonials-1, .testimonials-2, .testimonials-3, .testimonials-4, .testimonials-5, .testimonials-6 {
+      flex-basis: 100%; /* Each testimonial occupies full width on smaller screens */
+  }
+}

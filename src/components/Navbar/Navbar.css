@@ -1,0 +1,248 @@
+nav{
+position: fixed;
+top: 0;
+left: 0;
+color:white;
+padding: 10px 0;
+width: 100%;            /*important--------*/
+display: flex;
+align-items: center;
+justify-content: center ;
+z-index: 10;
+
+}
+
+
+.listitems{
+  list-style-type: none;
+  display: inline-block;
+  padding: 0px 15px;
+}
+
+nav ul{
+    margin-left: 25px;
+}
+
+.logo {
+    width: 240px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  
+}
+
+.listitems{
+  display: inline-block;
+    margin-right: 20px;
+    position: relative; /* Ensure proper positioning of the underline */
+  }
+  
+  .listitems::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Position the underline below the text */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Height of the underline */
+    background-color: transparent; /* Color of the underline (initially transparent) */
+    transform: scaleX(0); /* Initially hide the underline */
+    transition: width 0.3s ease, left 0.3s ease; /* Add transition effects */
+  }
+  
+  .listitems:hover::after {
+    transform: scaleX(1); /* Display the underline on hover */
+    background-color: #FF9913; /* Change the color of the underline on hover */
+    
+  }
+
+  .navitems{
+    text-decoration: none;
+    color: white;
+  }
+
+  .navbar-hidden {
+    top: -100px; /* Move the navbar out of the viewport when hidden */
+  }
+
+  /*---regarding media query class---*/
+  .hamburger-icon{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 50px;
+  }
+  .crossmark-icon{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+ 
+
+  @media (min-width: 780px) {
+    .dropdown-menu {
+    width: 380px;
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    color: black;
+    background-color: #F6AB41;
+    border: 1px solid #FF9913;
+    padding: 15px 20px 20px;
+    margin-top: 20px;
+    list-style-type: none;
+  }
+  
+  
+}
+
+  @media (max-width: 780px) {
+
+    .logo{
+      margin-right: 100px;
+      width: 220px;
+    }
+    .nav-links {
+      display: none;
+    }
+  
+    .nav-links-mob {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      list-style-type: none;
+      background-color: black;
+      z-index: 999;
+      
+    }
+    .listitems{
+      padding-top: 32px;
+     
+      
+    }
+    .navitems {
+      color: white;
+      text-align: center;
+      padding: 32px;
+      width: 100%;
+      transition: all 0.5s ease;
+      text-decoration: none;
+      
+    }
+  
+    .hamburger-icon {
+      display: block;
+      position: absolute;
+      top: 30px;
+      right: 25px;
+    }
+  
+    .crossmark-icon {
+      display: block;
+      position: fixed;
+      top: 25px;
+      right: 40px;
+      z-index: 1000; /* Ensure the cross mark icon is above everything else */
+      color: white; /* Optional: Change the color to white for visibility */
+    }
+    
+   
+  
+  }
+
+
+  /* -----media query-----
+@media (max-width: 1000px){
+  .logo{
+      width: 180px;
+  }
+  nav ul li{
+      padding: 0px 15px;
+  }
+}
+
+/* for smaller screens---*/
+/* @media (max-width: 840px){
+  nav ul{
+  position:fixed;
+  top:0;
+  right:0;
+  bottom: 0;
+  background:purple;
+  z-index: -1;
+  width:200px;
+  padding-top: 70px;
+  transition: 0.5s;
+  text-align: center;
+}
+nav ul li{
+  display: block;
+  margin: 25px 40px;
+}
+.btn{
+  padding: 5px 20px;
+}
+/*---mela above media query display none kuduthurukom---*/
+/* .hamburger-icon{
+  display: block;
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+/*----usestate use panni Ul la classname add pannirukom hamburger menus hide panna*/
+/* .hide-hamburger-menu{
+  right: -200px;
+}
+
+} */ 
+
+
+
+/* for smaller screens---*/
+/* @media (max-width: 840px){
+  nav ul{
+  position:fixed;
+  top:-100vh;
+  left: 0;
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background:purple;
+  z-index: 9999;
+  transition: 1s;
+ 
+ 
+}
+  .responsive_nav{
+ 
+  transform:translateY(100vh) ;
+}
+
+nav ul li{
+  display: block;
+  margin: 25px 40px;
+}
+
+/*---mela above media query display none kuduthurukom---*/
+/* .hamburger-icon{
+  display: block;
+ 
+}
+
+.crossmark-icon{
+  display: block;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+ 
+}
+
+
+/* } */ 

@@ -1,0 +1,50 @@
+.testimonial-slide img{
+    width: 300px;
+    height: 200px;
+   
+}
+.testimonial-slider-container{
+    margin-top: 50px;
+    
+}
+
+.testimonial-slide p{
+font-weight: 700;
+font-size: 17px;
+margin-bottom: 25px;
+
+}
+
+.slider-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.slider-navigation button{
+   
+    padding: 30px 40px;
+    border-radius: 100%;
+    border: none;
+    background-color: lightgray;
+    margin-right: 5px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.slider-navigation button:hover {
+background-color: #F6AB41; /* Change background color on hover */
+transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.slick-slide {
+    padding: 0 20px; /* Set the desired gap between slides */
+  }
+  
+/* Media query for screens below 746 pixels */
+@media (max-width: 746px) {
+    .testimonial-slide img {
+        width: 100%; /* Set the width to 100% for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+}

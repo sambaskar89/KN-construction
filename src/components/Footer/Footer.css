@@ -1,0 +1,217 @@
+.Footer{
+ 
+   color: white;
+   background-color: black;
+   margin-top: 15px;
+  
+}
+
+.footercontainer-1{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 20%;
+   padding-top: 70px;
+
+ }
+
+
+
+.Footer-content-1{
+    width: 350px;
+}
+.Footer-content-1 h6{
+   
+    font-size: 13px;
+}
+
+.Footer-content-1 p{
+    margin-top: 20px;
+    margin-bottom: 70px;
+    font-size: 16px;       /*----font-size = 16px----*/
+}
+
+.Footer-content-2 h6{
+   
+
+    font-size: 13px;
+}
+
+
+.Footer-content-2 p{
+   
+    margin-top: 20px;
+    font-size: 14px;      /*----font-size = 14px----*/
+    
+}
+.Footer-content-3 h6{
+   
+
+    font-size: 13px;
+}
+
+
+.Footer-content-3 p{
+   
+    margin-top: 20px;
+    font-size: 14px;      /*----font-size = 14px----*/
+    
+}
+.Footer-content-4 h6{
+   
+
+    font-size: 13px;
+}
+
+
+.Footer-content-4 p{
+   
+    margin-top: 20px;
+    font-size: 16px;       /*----font-size = 16px----*/
+    
+}
+
+  .Footer-content-4 a{
+   
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.noUnderline {
+    color: white;
+    text-decoration: none;
+   
+    position: relative; /* Set position to relative */
+  }
+
+.noUnderline::after {
+    content: ''; /* Create a pseudo-element for the underline */
+    position: absolute; /* Position the underline absolutely */
+    bottom: -2px; /* Position the underline 2px above the bottom */
+    left: 0; /* Align the underline with the left edge */
+    width: 100%; /* Make the underline span the full width */
+    height: 4px; /* Set the height of the underline */
+    background-color: #FF9913; /* Set the background color of the underline */
+  }
+
+  .footercontainer-2{
+    border-top: 1px solid #797979; /* Border top */
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 20%;
+   padding-top: 40px;
+   padding-bottom: 40px;
+   font-size: 13px;
+
+ } 
+
+
+ .footercontainer-2 ul li{
+   
+    display:inline-block ;
+    margin-right: 20px;
+}
+.downfooter{
+    text-decoration: none;
+    color: white;
+}
+
+/* Media query for medium screens */
+@media screen and (max-width: 1600px) {
+    .footercontainer-1{
+       
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .footercontainer-2{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .footercontainer-1{
+       
+        margin-left: 8%;
+        margin-right: 8%;}
+
+        .Footer-content-1,.Footer-content-2,.Footer-content-3,.Footer-content-4{
+            padding-right: 5px;
+        }
+        
+        .Footer-content-1,.Footer-content-2,.Footer-content-3,.Footer-content-4{
+            flex-basis: 50%;
+        }
+        .footercontainer-2{
+            margin-left: 8%;
+            margin-right: 8%;
+        }
+        
+    }
+
+@media screen and (max-width: 920px) {
+    .footercontainer-1{
+        flex-direction: row; /* Change to column layout for smaller screens */
+        flex-wrap: wrap;
+        margin-left: 5%;
+        margin-right: 5%;
+        justify-content: center;
+    }
+    .Footer-content-1,.Footer-content-2,.Footer-content-3,.Footer-content-4{
+        width: 100%;
+    }
+    
+    .noUnderline{
+        display: inline-block;
+        width: 200px;
+       }
+       .footercontainer-2{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 70px;
+       
+    }
+
+}
+@media screen and (max-width: 650px) {
+    .footercontainer-1{
+        flex-direction: column; /* Change to column layout for smaller screens */
+        margin-left: 10%;
+        margin-right: 10%;
+        align-items: space-between;
+    }
+    .Footer-content-1 p,.Footer-content-2 p,.Footer-content-3 p,.Footer-content-4 p{
+      width: 100%;
+     
+    }
+    .Footer-content-1{
+        width: 100%;
+    }
+   
+    .Footer-content-3,.Footer-content-4{
+        padding-top: 50px;
+        width: 100%;
+        
+    }
+    .noUnderline{
+        display: inline-block;
+        width: 200px;
+       }
+       .footercontainer-2{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 70px;
+        display: block;
+       
+    }
+    .footercontainer-2 ul li{
+       
+        margin-top: 10px;
+        font-size: 13px;
+        margin-right: 10px;
+        
+    }
+
+}
+

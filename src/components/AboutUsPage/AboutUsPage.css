@@ -1,0 +1,547 @@
+
+.aboutus-1{
+    width: 100%;
+   height: 60vh; 
+  background-image: url('../../assets/Blackbackgroundimage2.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ padding-left: 6%;
+
+  
+}
+.aboutus-1 h1{
+    color: white; 
+    font-size: 57px;
+}
+.aboutus-anchortag{
+      text-decoration: none;
+      color: white; 
+      font-weight: 600;  
+      font-size: 13px;
+}
+.aboutus-1 ul{
+   
+   list-style-type: none;
+   display: flex;
+  
+}
+
+.aboutus-1 ul li{
+    margin-right: 6px; 
+  
+}
+.orange-text {
+    color: darkorange;/* Set the color to orange */
+    background-color: black;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .aboutus-2{
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 80px;
+    margin-bottom: 80px;
+  }
+  .aboutus-2 h6{
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+  }
+  .aboutus-2 h2{
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    
+  }
+  .aboutus-2-content1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .aboutus-2-content1 img{
+    max-width: 550px;
+    height: 350px;
+  }
+  .aboutus-2-content1 p{
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+
+  .aboutus-2 h2{
+    font-size: 35px;
+    font-weight: 400;
+   
+  }
+
+
+   .aboutus-2 h6::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Adjust the height of the underline as needed */
+    background-color: orange; /* Change the color of the underline */
+    display: block;
+  }
+  .aboutus-2-paragraph{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+  }
+
+  .aboutus-3{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .aboutus-3-left h6{
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+  }
+  .aboutus-3-left h2{
+    width: 500px;
+    font-size: 35px;
+    font-weight: 400;
+  }
+  .aboutus-3-left h4{
+    font-size: 40px;
+    padding-top: 40px;
+  }
+  .aboutus-3-left h5{
+    font-size: 17px;
+    
+  }
+
+  .aboutus-3-left h6::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Adjust the height of the underline as needed */
+    background-color: orange; /* Change the color of the underline */
+    display: block;
+  }
+  .aboutus-3-right{
+    padding-top: 30px;
+}
+
+
+
+  .aboutus-3-right p{
+    width: 500px;
+    font-size: 20px;
+    font-weight: 550;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .aboutus-3 p::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Adjust the height of the underline as needed */
+    background-color: transparent; /* Change the color of the underline */
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+
+  
+.aboutus-3-right p:hover::after {
+    background-color: orange; /* Change the underline color on hover */
+  }
+
+  .aboutus-4{
+    width: 100%;
+    background: rgb(260, 248, 247);
+   padding-top: 20px;
+   padding-bottom: 20px;
+  }
+
+  .aboutus-4-content{
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .aboutus-4-content-top{
+    display: flex;
+    justify-content: space-between;
+  }
+  .aboutus-4-content-top-left h6{
+     font-size: 18px;
+     position: relative;
+     display: inline-block;
+  }
+  .aboutus-4-content-top-left h2{
+    font-size: 35px;
+    font-weight: 400;
+ }
+ .aboutus-4-content-top-right{
+    font-size: 17px;
+    width: 500px;
+ }
+ .aboutus-4-content-bottom{
+    display: flex;
+    justify-content: space-between;
+
+ }
+ .aboutus-4-content-bottom-1 img{
+    width: 320px;
+    height: 360px;
+    margin-top: 40px;
+ }
+ .aboutus-4-content-bottom-2 img{
+    width: 320px;
+    height: 360px;
+    margin-top: 40px;
+ }
+ .aboutus-4-content-bottom-3 img{
+    width: 320px;
+    height: 360px;
+    margin-top: 40px;
+ }
+ 
+ .aboutus-4-content-top-left h6::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Adjust the height of the underline as needed */
+    background-color: orange; /* Change the color of the underline */
+    display: block;
+ }
+
+ .aboutus-4-content-bottom-1,
+ .aboutus-4-content-bottom-2,
+ .aboutus-4-content-bottom-3 {
+     position: relative; /* Set relative positioning for the parent divs */
+ }
+ 
+ .aboutus-4-content-bottom-1-content,.aboutus-4-content-bottom-2-content,.aboutus-4-content-bottom-3-content{
+    position: absolute;
+    bottom: -20px; /* Adjust to position slightly outside the bottom of the image */
+    right: -50px; /* Adjust to move the divs outside the right side of the image */
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 40px; /* Adjust padding as needed */
+    font-size: 16px;  
+    background-color: #ffffff; /* White background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    transition: bottom 0.3s; /* Add a transition for smooth movement */
+ 
+ }
+
+ .aboutus-4-content-bottom-1-content img, .aboutus-4-content-bottom-2-content img, .aboutus-4-content-bottom-3-content img {
+    width: 70px;
+    height: 70px;
+  
+ }
+ 
+ .aboutus-4-content-bottom-1-content h6,
+.aboutus-4-content-bottom-2-content h6,
+.aboutus-4-content-bottom-3-content h6 {
+   margin-left: 10px;
+   margin-top: 10px;
+   padding-top: 10px;
+   font-size: 16px;
+   font-weight: 650;
+   position: relative;
+   display: inline-block;
+ 
+}
+
+
+.aboutus-4-content-bottom-1:hover .aboutus-4-content-bottom-1-content,
+.aboutus-4-content-bottom-2:hover .aboutus-4-content-bottom-2-content,
+.aboutus-4-content-bottom-3:hover .aboutus-4-content-bottom-3-content {
+    bottom: 0px; /* Move the div to the bottom of the image */
+   
+}
+
+/*.aboutus-4-content-bottom-1-content h6::after,
+.aboutus-4-content-bottom-2-content h6::after,
+.aboutus-4-content-bottom-3-content h6::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Adjust the height of the underline as needed */
+    /* background-color: orange; /* Change the color of the underline */
+   
+
+
+
+    /* Media query for medium screens */
+  @media screen and (max-width: 1400px) {
+
+    .aboutus-1 h1{
+      color: white; 
+      font-size: 50px;
+  }
+  .aboutus-2{
+      margin-left: 10%;
+      margin-right: 10%;
+  
+    }
+    .aboutus-2-content1 {
+        flex-direction: column; /* Change to column layout for medium screens */
+        align-items: center; /* Center items vertically */  
+    }
+    .aboutus-2-paragraph{
+      font-size: 16px;
+      margin-bottom: 30px;
+      padding-left: 0px;
+      padding-top: 10px;
+  
+    }
+    .aboutus-2-content1 img {
+        width: 100%; /* Make the image fill the width of its container */
+        max-width: none; /* Remove max-width */
+        height: auto; /* Auto-adjust height */
+        margin-bottom: 20px; /* Add spacing between image and paragraph */
+       
+    }
+  
+    .aboutus-2-paragraph {
+        width: 100%; /* Make paragraph width full for medium screens */
+        
+    }
+  }
+
+
+  
+@media screen and (max-width: 600px) {
+ 
+    .aboutus-1 h1{
+      color: white; 
+      font-size: 40px;
+  }
+  .aboutus-2{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 20px;
+      }
+      .aboutus-2-content1{
+          flex-direction: column; /* Change to column layout for medium screens */
+          align-items: center; /* Center items vertically */
+          
+         
+      }
+    
+      .aboutus-2-content1 img {
+          width: 100%; /* Make the image fill the width of its container */
+          max-width: none; /* Remove max-width */
+          height: auto; /* Auto-adjust height */
+          margin-bottom: 20px; /* Add spacing between image and paragraph */
+      }
+      .aboutus-2-paragraph{
+        
+        margin-bottom: 0px;
+        padding-left: 0px;
+        padding-top: 10px;
+    
+      }
+      .aboutus-2-paragraph{
+          width: 100%; /* Make paragraph width full for medium screens */
+        
+      }
+    
+    
+       
+    }
+    
+  /* Media query for screens below 1300px */
+@media screen and (max-width: 1300px) {
+  .aboutus-3 {
+    flex-direction: row; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .aboutus-3-left,
+  .aboutus-3-right {
+    width: 100%; /* Set width to occupy full width */
+    
+    margin-bottom: 20px; /* Add some spacing between elements */
+  }
+  .aboutus-3-left h2{
+    width: 80%;
+    
+  }
+  
+  .aboutus-3-right p{
+    width: 80%;
+    
+   
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .aboutus-3 {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 30px;
+    padding-top: 40px;
+  }
+
+  .aboutus-3-left,
+  .aboutus-3-right {
+    width: 100%; /* Set width to occupy full width */
+    margin-bottom: 20px; /* Add some spacing between elements */
+  }
+  .aboutus-3-left h2{
+    width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  
+  .aboutus-3-right p{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 550;
+   
+  }
+}
+
+
+@media screen and (max-width: 1700px) and (min-width: 950px) {
+  .aboutus-4-content {
+    margin-left: 10%; /* Adjust margin as needed */
+    margin-right: 10%; /* Adjust margin as needed */
+    padding-top: 60px; /* Adjust padding as needed */
+    margin-bottom: 60px; /* Adjust margin as needed */
+  }
+  
+  .aboutus-4-content-top-left{
+    width: 100%;
+   }
+   .aboutus-4-content-top-right{
+    width: 100%;
+   }
+  
+   .aboutus-4-content-top-left h2{
+    width: 100%;
+   }
+   .aboutus-4-content-bottom{
+    width: 100%;
+   }
+   .aboutus-4-content-bottom-1,.aboutus-4-content-bottom-2,.aboutus-4-content-bottom-3{
+  width: 100%;
+   }
+
+  
+     .aboutus-4-content-bottom-1-content,.aboutus-4-content-bottom-2-content,.aboutus-4-content-bottom-3-content{
+ width: 100%;
+     }
+   
+}
+
+@media screen and (max-width: 950px)  {
+  .aboutus-4-content {
+    margin-left: 5%; /* Adjust margin as needed */
+    margin-right: 5%; /* Adjust margin as needed */
+    padding-top: 40px; /* Adjust padding as needed */
+    margin-bottom: 60px; /* Adjust margin as needed */
+  }
+  .aboutus-4-content-top{
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutus-4-content-top-left{
+    width: 100%;
+    padding-bottom: 70px;
+   }
+   .aboutus-4-content-top-right{
+    width: 100%;
+   }
+  
+   .aboutus-4-content-top-left h2{
+    width: 100%;
+   }
+   
+   .aboutus-4-content-bottom {
+    display: flex;
+   flex-direction: column;
+    justify-content: center; /* Center the content horizontally */
+  }
+  .bottom{
+    width: 100%;
+   
+  }
+  .aboutus-4-content-bottom-1, .aboutus-4-content-bottom-2, .aboutus-4-content-bottom-3 {
+    
+    max-width: 100%; /* Ensure it doesn't exceed the container's width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin: 10px; /* Add some spac,ing between items */
+  }
+  
+  .aboutus-4-content-bottom-1 img ,.aboutus-4-content-bottom-2 img,.aboutus-4-content-bottom-3 img{
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  
+  
+  .aboutus-4-content-bottom-1-content img , .aboutus-4-content-bottom-2-content img, .aboutus-4-content-bottom-3-content img{
+    width: 50px; /* Fixed size for the icon */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .aboutus-4-content-bottom-1-content h6 {
+    margin: 10px 0 0 0; /* Add spacing around the heading */
+  }
+  .aboutus-4-content-bottom-1,
+ .aboutus-4-content-bottom-2,
+ .aboutus-4-content-bottom-3 {
+     position: relative; /* Set relative positioning for the parent divs */
+ }
+ 
+ .aboutus-4-content-bottom-1-content,.aboutus-4-content-bottom-2-content,.aboutus-4-content-bottom-3-content{
+    position: absolute;
+    bottom: 8%; /* Adjust to position slightly outside the bottom of the image */
+    right: 13px; /* Adjust to move the divs outside the right side of the image */
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 40px; /* Adjust padding as needed */
+    font-size: 16px;  
+    background-color: #ffffff; /* White background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    transition: bottom 0.3s; /* Add a transition for smooth movement */
+ 
+ }
+ .aboutus-4{
+  width: 100%;
+  background: rgb(260, 248, 247);
+ padding-top: 20px;
+ padding-bottom: 0px;
+}
+
+  
+   
+}
