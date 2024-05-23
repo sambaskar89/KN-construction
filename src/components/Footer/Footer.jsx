@@ -8,6 +8,10 @@ const Footer = () => {
   const gmailEmail = 'kmhomedevelopers@gmail.com';
   const mailtoLink = `mailto:${gmailEmail}`;
 
+  //phonenumber
+  const phoneNumber1 = '+91 9790395545';
+  const phoneNumber2 = '+91 9003599745';
+
   return (
     <div className='Footer'>
       <div className='footercontainer-1'>
@@ -52,8 +56,8 @@ const Footer = () => {
 
      <div className='Footer-content-4'>
            <h6>GET IN TOUCH</h6>
-           <p>+91 9790395545</p>
-           <p>+91 9003599745</p>
+           <a href="tel:+91 9790395545" class="phonenumber">+91 9790395545</a><br></br>
+           <a href="tel:+91 9003599745" class="phonenumber">+91 9003599745</a>
 
            <p><a href={mailtoLink}>kmhomedevelopers@gmail.com</a></p>
         

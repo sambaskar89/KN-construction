@@ -10,6 +10,12 @@ import { useEffect } from 'react';
 
 const ContactUs = () => {
 
+  const gmailEmail = 'kmhomedevelopers@gmail.com';
+  const mailtoLink = `mailto:${gmailEmail}`;
+
+  //phonenumber
+  const phoneNumber1 = '+91 9790395545';
+  const phoneNumber2 = '+91 9003599745';
 
 //Scrolling from top of the page function
 useEffect(() => {
@@ -27,7 +33,7 @@ const onSubmit = async (event) => {
   setResult("Sending....");
   const formData = new FormData(event.target);
 
-  formData.append("access_key", "ab18d276-b0b9-48df-a600-2a9cc6b63c15");
+  formData.append("access_key", "7688d1d5-d5ce-463a-98f5-1aad38237b15");
 
   const response = await fetch("https://api.web3forms.com/submit", {
     method: "POST",
@@ -80,16 +86,16 @@ const onSubmit = async (event) => {
                     <img src={phoneimg}></img>
                     <h6>Call Us</h6>
                     <div className='para'>
-                    <p>+91 9790395545</p>
-                    <p>+91 9003599745</p>
+                    <p><a href="tel:+91 9790395545" class="phonenumber">+91 9790395545</a></p>
+                    <p><a href="tel:+91 9003599745" class="phonenumber">+91 9003599745</a></p>
                     </div>
                 </div>
                 <div className='contactus-2-top-3'>
                     <img src={ messageimg}></img>
                     <h6>Write Us</h6>
                     <div className='para'> 
-                    <p>kmhomedevelopers@gmail.com</p>
-                    <p>www.kmhomedevelopers.com</p>
+                    <p><a href={mailtoLink}>kmhomedevelopers@gmail.com</a></p>
+                    <p>www.kmhomedevelopers.in</p>
                     </div>
                     
                 </div>

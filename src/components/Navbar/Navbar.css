@@ -19,12 +19,10 @@ z-index: 10;
   padding: 0px 15px;
 }
 
-nav ul{
-    margin-left: 25px;
-}
+
 
 .logo {
-    width: 240px; /* Adjust the width as needed */
+    width: 220px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
   
 }
@@ -47,12 +45,7 @@ nav ul{
     transition: width 0.3s ease, left 0.3s ease; /* Add transition effects */
   }
   
-  .listitems:hover::after {
-    transform: scaleX(1); /* Display the underline on hover */
-    background-color: #FF9913; /* Change the color of the underline on hover */
-    
-  }
-
+  
   .navitems{
     text-decoration: none;
     color: white;
@@ -61,13 +54,13 @@ nav ul{
   .navbar-hidden {
     top: -100px; /* Move the navbar out of the viewport when hidden */
   }
-
+ 
   /*---regarding media query class---*/
   .hamburger-icon{
     display: none;
     font-size: 30px;
     cursor: pointer;
-    margin-right: 50px;
+    
   }
   .crossmark-icon{
     display: none;
@@ -75,6 +68,14 @@ nav ul{
     cursor: pointer;
   }
  
+
+  @media (min-width: 780px) {
+    .listitems:hover::after {
+      transform: scaleX(1); /* Display the underline on hover */
+       background-color: #FF9913; 
+      
+    }
+  }
 
   @media (min-width: 780px) {
     .dropdown-menu {
@@ -92,12 +93,24 @@ nav ul{
   
   
 }
+@media (max-width: 850px) {
+  .listitems{
+   
+    padding: 0px 12px;
+    font-size: 15px;
+  }
+  
+.logo {
+  width: 200px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
 
+}
+}
   @media (max-width: 780px) {
-
+  
     .logo{
       margin-right: 100px;
-      width: 220px;
+      width: 200px;
     }
     .nav-links {
       display: none;
@@ -135,21 +148,23 @@ nav ul{
   
     .hamburger-icon {
       display: block;
-      position: absolute;
-      top: 30px;
-      right: 25px;
+      position: fixed;
+      top: 28px;
+      right: 80px;
     }
   
     .crossmark-icon {
       display: block;
       position: fixed;
-      top: 25px;
-      right: 40px;
+      top: 28px;
+      right: 80px;
       z-index: 1000; /* Ensure the cross mark icon is above everything else */
       color: white; /* Optional: Change the color to white for visibility */
     }
     
-   
+    .hamburger-hidden{
+      top: -100px;
+    }
   
   }
 

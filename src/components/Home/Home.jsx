@@ -19,7 +19,7 @@ useEffect(() => {
 
   return (
 
-    <>
+    <div style={{overflowX:'hidden'}}>
     <div className='home'>
         <div className='home-text'>
             <h1>Building Dreams Into <span>Reality</span></h1>
@@ -44,7 +44,7 @@ useEffect(() => {
 
 <Footer/>
 
-</>
+</div>
   )
 }
 

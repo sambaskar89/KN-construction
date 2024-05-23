@@ -43,8 +43,19 @@ transition: background-color 0.3s ease; /* Add transition effect */
   
 /* Media query for screens below 746 pixels */
 @media (max-width: 746px) {
+    .testimonial-slide p{
+        font-weight: 700;
+        font-size: 12px;
+        margin-bottom: 25px;
+        }
+
     .testimonial-slide img {
-        width: 100%; /* Set the width to 100% for smaller screens */
-        height: auto; /* Maintain aspect ratio */
+       
+        max-width: 149px;
+        
+        
+        min-height: 120px;
+        max-height: 120px;
+        
     }
 }

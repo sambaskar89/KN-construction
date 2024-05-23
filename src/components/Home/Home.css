@@ -1,59 +1,55 @@
 
 
-.home{
+.home {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(rgba(8,0,58,0.8), rgba(8,0,58,0.4)), url('../../assets/Backgroundimage5.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
 
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(rgba(8,0,58,0.8),rgba(8,0,58,0.4)),url('../../assets/Backgroundimage5.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .home-text {
-  
-    text-align: center;
-    color: white;
-    max-width: 800px;
-  }
-
-  .home-text h1{
-    font-size: 40px;
-    font-weight:600 ;
+  text-align: center;
+  color: white;
+  max-width: 800px;
 }
 
-.home-text span{
+.home-text h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.home-text span {
   color: #FF9913;
 }
-.home-text h3{
-    max-width: 700px;
-    margin: 20px auto 20px; /*top left&right bottom */
-    line-height: 1.4;
-    font-weight: 500;
-    
-}
 
+.home-text h3 {
+  max-width: 700px;
+  margin: 20px auto;
+  line-height: 1.4;
+  font-weight: 500;
+}
 
 /* Media query for medium-sized screens */
 @media (max-width: 991.98px) {
   .home-text h1 {
-      font-size: 32px; /* Adjust font size for medium screens */
+    font-size: 32px; /* Adjust font size for medium screens */
   }
-  
-
 }
 
 /* Media query for small screens */
 @media (max-width: 767.98px) {
+ 
   .home-text h1 {
-      font-size: 24px; /* Adjust font size for small screens */
+    font-size: 24px; /* Adjust font size for small screens */
   }
-  .home-text h3{
+  .home-text h3 {
     max-width: 300px;
     font-size: 16px;
-}
-
-  
+  }
 }

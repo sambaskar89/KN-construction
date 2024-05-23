@@ -53,17 +53,17 @@ const Navbar = () => {
        <nav className={isScrolled ? 'navbar-hidden' : ''} >
        
                <Link to='/'><img src={logo} alt='logo' className='logo'/></Link>
-            <ul className={isMenuOpen ? 'nav-links-mob' : 'nav-links'} onClick={()=> setIsMenuOpen(false)}>
-                <li className='listitems'><Link to='/' className='navitems ' >Home</Link></li>
-                <li className='listitems'><Link to='/about' className='navitems'>About Us</Link></li>
-                <li className='listitems '><DropdownMenu/></li>
-                <li className='listitems'><Link to='/projects' className='navitems '>Projects</Link></li>
-                <li className='listitems'><Link to='/contact-us'className='navitems ' >Contact Us</Link></li>
+            <ul className={isMenuOpen ? 'nav-links-mob' : 'nav-links'} >
+                <li className='listitems'><Link to='/' className='navitems ' onClick={toggleMenu} >Home</Link></li>
+                <li className='listitems'><Link to='/about' className='navitems' onClick={toggleMenu}>About Us</Link></li>
+                <li className='listitems ' ><DropdownMenu  setIsMenuOpen={()=>setIsMenuOpen(false)}/></li>
+                <li className='listitems' onClick={toggleMenu}><Link to='/projects' className='navitems '>Projects</Link></li>
+                <li className='listitems' onClick={toggleMenu}><Link to='/contact-us'className='navitems ' >Contact Us</Link></li>
 
         
             </ul>
          
-            {isMenuOpen? <FontAwesomeIcon icon={faSquareXmark} className='crossmark-icon' onClick={toggleMenu}/> : <FontAwesomeIcon icon={faBars} className='hamburger-icon' onClick={toggleMenu} /> }
+            {isMenuOpen? <FontAwesomeIcon icon={faSquareXmark} className='crossmark-icon' onClick={toggleMenu}/> : <FontAwesomeIcon icon={faBars} className={`${isScrolled ? 'hamburger-hidden' : ''} hamburger-icon`} onClick={toggleMenu} /> }
       </nav>
 </header>
   )

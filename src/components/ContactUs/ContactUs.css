@@ -24,12 +24,23 @@
     font-size: 18px;
     
  }
+ .contactus-2-top-2 a{
+  text-decoration: none;
+  color: black;
+  padding-top: 0;
+  
+ }
  .para{
-    padding-top: 20px;
+  padding-top: 20px;
+    
  }
  .contactus-2-top{
 display: flex;
 justify-content: space-between;
+ }
+ .contactus-2-top-3 a{
+  text-decoration: none;
+  color: black;
  }
 
 
@@ -156,7 +167,7 @@ justify-content: space-between;
 
 margin-right: 30px;
   }
-  .contactus-2-top-1 img,.contactus-2-top-1 img,.contactus-2-top-1 img,{
+  .contactus-2-top-1 img,.contactus-2-top-2 img,.contactus-2-top-3 img,{
     width: 100%;
   }
   .contactus-2-top-1 h6,.contactus-2-top-1 h6,.contactus-2-top-1 h6{
@@ -190,6 +201,10 @@ margin-right: 30px;
       max-width: 100%;
       
   }
+  .contactus-2-top-1 img, .contactus-2-top-2 img, .contactus-2-top-3 img{
+    width: 80px;
+    height: 80px;
+}
 
   .contactus-2-bottom {
       flex-direction: column;
@@ -208,20 +223,40 @@ margin-right: 30px;
       height: auto;
  
 }
-.contactus-2-bottom-2 {
-   
-}
 
 
 }
 @media (max-width: 650px) {
   .contactus-2 {
-    margin-left: 2%;
-    margin-right: 2%;
-  padding-left: 25px;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 25px;
+  padding-bottom: 60px;
+  padding-top: 80px;
 }
 .contactus-2-bottom-2 {
   margin-right: 25px;
+  
+}
+.contactus-2-bottom-1 h6{
+  
+   padding-top: 30px;
+}
+
+.contactus-2-top-1 img, .contactus-2-top-2 img, .contactus-2-top-3 img{
+  width: 80px;
+  height: 80px;
+}
+form {
+   
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.contactus-2-bottom-2 form input, .contactus-2-bottom-2 form textarea {
+ 
+  padding: 20px;
+  margin-bottom: 20px;
   
 }
 
